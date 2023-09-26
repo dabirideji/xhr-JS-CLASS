@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style>
+    .loader{
+        height:20px;
+        width:20px;
+        background-color:lightgray;
+        border:1px solid black;
+        display:block;
+        border-radius:50%;
+        border-top-color:gold;
+        border-right-color:gold;
+        animation-name: roll;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-delay: 0;
+        animation-direction:alternate-reverse;
+        animation-fill-mode:both;
+        animation-duration: 1s;
+
+
+    }
+
+    
+
+    button{
+        height:80px;
+        width:120px;
+    }
+
+
+
+
+@keyframes roll {
+    50%{
+       background-color: red; 
+    }
+    70%{
+        background-color: green;
+    }
+    100%{
+        /* background-color: gold; */
+         transform: rotate(490deg);
+         
+         background-color: gold;
+       
+    }
+}
+
+
+
+  </style>
+
+
+
+</head>
+<body>
+    
+    
+    <button id="dataBtn" onclick="getData()">CLICK</button>
+</body>
+</html>
+
+
+
+<script src="../js/script.js"></script>
